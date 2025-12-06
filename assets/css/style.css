@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal con las dos columnas */
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/*Sección de Contactos */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 350px;
+    background-color: #fff;
+}
+
+aside img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Info del Usuario */
+.mi-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+        border-bottom: 1px solid #ddd;
+
+} 
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconos {
+    gap: 10px;
+    align-items: center;
+}
+
+/* Botón */
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.boton {
+    background-color: #B2A1D9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #20c75a;
+    transform: scale(1.1);
+}
+
+
+/*Lista de Contactos */
+
+.lista-contactos {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.lista-contactos::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lista-contactos::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 4px;
+}
+
+.lista-contactos::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.contacto {
+    display: flex;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.contacto:hover {
+    background-color: #ebebeb;    
+}
+
+.nombre-contacto {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ultimo-mensaje {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Sección principal (columna derecha) */
+
+main {
+    flex: 1;
+    background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.texto-principal {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.texto-secundario {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    max-width: 500px;
+}
